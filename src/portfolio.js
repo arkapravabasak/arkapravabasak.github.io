@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "arkapravabasak",
+  title: "Hi all, I'm Arkaprava",
   subTitle: emoji(
-    "A passionate RPA Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate RPA Developer 🚀 having an experience of building Automation Workflows and End-to-End Automation Solutions using RPA tools like UiPath, Automation Anywhere and scripting languages such as Python."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
