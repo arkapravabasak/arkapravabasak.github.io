@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="script.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+
+        const btn = document.getElementById("themeButton");
+
+        if (document.body.classList.contains("dark-mode")) {
+            btn.innerText = "☀️ Light Mode";
+            } else {
+            btn.innerText = "🌙 Dark Mode";
+            }
+        }
+    </script>
     <header>
         <h1>ARKAPRAVA BASAK</h1>
         <p>Process and Workflow Automation Specialist | Technical Architect</p>
