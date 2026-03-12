@@ -8,23 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-    function toggleTheme() {
-        document.body.classList.toggle("dark-mode");
-
-        const btn = document.getElementById("themeButton");
-
-        if (document.body.classList.contains("dark-mode")) {
-            btn.innerText = "☀️ Light Mode";
-            } else {
-            btn.innerText = "🌙 Dark Mode";
-            }
-        }
-    </script>
+   
     <header>
         <h1>ARKAPRAVA BASAK</h1>
         <p>Process and Workflow Automation Specialist | Technical Architect</p>
-        <button onclick="toggleTheme()" id="themeButton">🌙 Dark Mode</button>
+        <button id="themeButton" onclick="toggleTheme()">🌙 Dark Mode</button>
         
     </header>
 
@@ -51,5 +39,5 @@
         </ul>
     </section>
 </body>
-
+<script src="script.js"></script>
 </html>
