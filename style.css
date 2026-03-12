@@ -85,3 +85,57 @@ transform: translateY(-5px);
 body.dark-mode .project-card {
 background: #1e1e1e;
 }
+
+/* NAVBAR */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 20px;
+border-bottom: 1px solid #ccc;
+margin-bottom: 30px;
+}
+
+.nav-logo {
+font-weight: bold;
+text-decoration: none;
+font-size: 18px;
+color: #0078d4;
+}
+
+.nav-links a {
+margin: 0 10px;
+text-decoration: none;
+color: #333;
+}
+
+.nav-social a {
+margin-left: 15px;
+text-decoration: none;
+color: #0078d4;
+font-weight: 500;
+}
+
+/* Hover effects */
+
+.nav-links a:hover,
+.nav-social a:hover {
+text-decoration: underline;
+}
+
+body.dark-mode .navbar {
+border-bottom: 1px solid #444;
+}
+
+body.dark-mode .nav-links a {
+color: #ddd;
+}
+
+body.dark-mode .nav-logo {
+color: #4da3ff;
+}
+
+body.dark-mode .nav-social a {
+color: #4da3ff;
+}
