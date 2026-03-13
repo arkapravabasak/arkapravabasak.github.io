@@ -50,6 +50,11 @@ background:#2f5d73;
 margin-top:15px;
 }
 
+.nav-menu{
+display:flex;
+align-items:center;
+}
+
 /* FOOTER */
 
 .site-footer{
@@ -83,3 +88,4 @@ text-align:center;
 .linkedin-icon{
 width:22px;
 }
+
