@@ -1,11 +1,15 @@
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-const header = await fetch("header.html");
-const headerHTML = await header.text();
-document.getElementById("header").innerHTML = headerHTML;
+fetch("/header.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
 
-const footer = await fetch("footer.html");
-const footerHTML = await footer.text();
-document.getElementById("footer").innerHTML = footerHTML;
+fetch("/footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
 
 });
