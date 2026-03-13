@@ -1,91 +1,52 @@
-body{
-font-family: Segoe UI, sans-serif;
-margin:0;
-background:#f4f4f4;
-color:#222;
+:root {
+    --primary-color: #2563eb;
+    --dark-bg: #1e293b;
+    --text-main: #334155;
+    --light-gray: #f8fafc;
 }
 
-.site-header{
-padding:25px 0 10px 0;
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-main);
 }
 
-.header-container{
-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+/* Responsive Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--dark-bg);
+    color: white;
 }
 
-.name{
-font-size:30px;
-font-weight:600;
+nav a { color: white; text-decoration: none; margin-left: 20px; }
+
+/* Grid for Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.separator{
-margin:0 10px;
-font-size:22px;
-color:#555;
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.title{
-font-size:18px;
-color:#444;
+.card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    nav { flex-direction: column; }
+    nav a { margin: 10px 0; }
 }
 
-.nav-menu a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-size:16px;
-}
-
-.nav-menu a:hover{
-text-decoration:underline;
-}
-
-.header-line{
-height:6px;
-background:#2f5d73;
-margin-top:15px;
-}
-
-.nav-menu{
-display:flex;
-align-items:center;
-}
-
-/* FOOTER */
-
-.site-footer{
-margin-top:60px;
-}
-
-.footer-line{
-height:6px;
-background:#2f5d73;
-margin-bottom:10px;
-}
-
-.footer-container{
-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 0;
-}
-
-.footer-left a{
-color:#2f5d73;
-text-decoration:none;
-}
-
-.footer-center{
-text-align:center;
-}
-
-.linkedin-icon{
-width:22px;
-}
-
+footer { text-align: center; padding: 2rem; background: var(--light-gray); }
+.social-icons img { width: 30px; margin: 0 10px; }
