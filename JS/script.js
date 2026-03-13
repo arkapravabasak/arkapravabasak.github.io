@@ -1,22 +1,39 @@
-// Load Header and Footer
 document.addEventListener("DOMContentLoaded", function() {
-    const header = `
+    // Shared Header
+    const headerHTML = `
         <nav>
-            <div class="logo">AB | Automation</div>
-            <div>
+            <div style="color:white; font-weight:bold; font-size:1.2rem;">AB | Automation Lead</div>
+            <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="career-roadmap.html">Experience</a>
+                <a href="career-roadmap.html">Career</a>
                 <a href="projects.html">Projects</a>
             </div>
         </nav>`;
-    
-    const footer = `
-        <p>Contact: arkaprava.basak@outlook.com [cite: 2]</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/arkapravabasak/"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="YOUTUBE_URL"><img src="images/youtube.png" alt="YouTube"></a>
+
+    // Shared Footer with your specific links
+    const footerHTML = `
+        <div class="footer-content">
+            <p>Kolkata, India | arkaprava.basak@outlook.com</p>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                </a>
+                <a href="YOUR_YOUTUBE_URL" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                </a>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 15px;">&copy; 2026 Arkaprava Basak</p>
         </div>`;
 
-    document.getElementById('header-placeholder').innerHTML = header;
-    document.getElementById('footer-placeholder').innerHTML = footer;
+    const headElem = document.getElementById('header-placeholder');
+    const footElem = document.getElementById('footer-placeholder');
+
+    if(headElem) headElem.innerHTML = headerHTML;
+    if(footElem) footElem.innerHTML = footerHTML;
 });
