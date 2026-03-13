@@ -144,7 +144,6 @@ text-decoration:underline;
 .hero-container{
 display:flex;
 align-items:center;
-justify-content:center;
 gap:60px;
 max-width:1000px;
 margin:auto;
@@ -152,11 +151,11 @@ padding:60px 20px;
 }
 
 .hero-image{
-width:180px;
-height:180px;
-border-radius:50%;
+width:220px;
+height:280px;
 object-fit:cover;
-box-shadow:0 4px 10px rgba(0,0,0,0.15);
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
 }
 
 .hero-text{
