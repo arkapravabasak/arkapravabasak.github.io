@@ -1,7 +1,12 @@
 body{
 margin:0;
 font-family:Segoe UI, sans-serif;
-background:linear-gradient(180deg,#f6f8fa,#e9eef3);
+
+background:
+radial-gradient(circle at 20% 20%, #e7eef3 0%, transparent 40%),
+radial-gradient(circle at 80% 10%, #e9f1f6 0%, transparent 40%),
+linear-gradient(#f4f7f9,#eef2f6);
+
 color:#222;
 }
 
@@ -111,15 +116,16 @@ margin:auto;
 
 .expertise-card{
 background:white;
-padding:28px;
+padding:25px;
 border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-transition:transform 0.25s ease, box-shadow 0.25s ease;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+transition:all 0.3s ease;
 }
 
 .expertise-card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 26px rgba(0,0,0,0.12);
+transform:translateY(-10px);
+box-shadow:0 14px 35px rgba(0,0,0,0.12);
 }
 
 .expertise-icon{
@@ -199,15 +205,18 @@ margin-bottom:25px;
 .hero-buttons a{
 display:inline-block;
 margin-right:15px;
-padding:12px 24px;
+padding:12px 26px;
 background:#2f5d73;
 color:white;
 text-decoration:none;
 border-radius:6px;
+transition:all 0.25s ease;
 }
 
 .hero-buttons a:hover{
-background:#1f4455;
+transform:translateY(-2px);
+background:#214656;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
 }
 
 
@@ -263,4 +272,12 @@ cursor:pointer;
 .expertise-card:hover{
 transform:translateY(-8px);
 box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.hero-card{
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(10px);
+padding:35px 40px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
