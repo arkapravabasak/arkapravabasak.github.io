@@ -92,21 +92,44 @@ background:#1f4455;
 /* EXPERTISE SECTION */
 
 .expertise{
-margin-top:60px;
+margin-top:80px;
+text-align:center;
+}
+
+.expertise h2{
+margin-bottom:35px;
+font-size:28px;
 }
 
 .expertise-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:25px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
 }
 
 .expertise-card{
 background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+padding:28px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.expertise-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 26px rgba(0,0,0,0.12);
+}
+
+.expertise-icon{
+font-size:34px;
+margin-bottom:12px;
+}
+
+.expertise-title{
+font-size:17px;
+font-weight:500;
 }
 
 /* FOOTER */
