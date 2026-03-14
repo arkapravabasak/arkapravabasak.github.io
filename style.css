@@ -352,6 +352,8 @@ display:flex;
 align-items:center;
 gap:60px;
 margin-bottom:80px;
+border-bottom:1px solid rgba(0,0,0,0.05);
+padding-bottom:60px;
 }
 
 /* Image */
@@ -394,4 +396,12 @@ transition:all 0.25s ease;
 .project-button:hover{
 background:#1f4455;
 transform:translateY(-2px);
+}
+
+.project-image{
+transition: transform 0.4s ease;
+}
+
+.project-image:hover{
+transform: scale(1.03);
 }
