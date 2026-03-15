@@ -529,6 +529,7 @@ font-weight:500;
 .process-steps{
 max-width:700px;
 margin-top:20px;
+text-align: left;
 }
 
 .process-steps ol{
