@@ -405,3 +405,123 @@ transition: transform 0.4s ease;
 .project-image:hover{
 transform: scale(1.03);
 }
+.project-card:nth-child(even){
+flex-direction: row-reverse;
+}
+
+/* PROJECT PAGE */
+
+.project-page{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* Back link */
+
+.back-link{
+display:inline-block;
+margin-bottom:30px;
+text-decoration:none;
+color:#2f5d73;
+font-weight:500;
+}
+
+.back-link:hover{
+text-decoration:underline;
+}
+
+/* Title */
+
+.project-page-title{
+font-size:40px;
+margin-bottom:40px;
+}
+
+/* Overview section */
+
+.project-overview{
+display:flex;
+gap:60px;
+align-items:flex-start;
+margin-bottom:60px;
+}
+
+.project-description{
+flex:1;
+}
+
+.project-description h2{
+margin-bottom:10px;
+}
+
+.project-description p{
+line-height:1.7;
+margin-bottom:15px;
+}
+
+/* Architecture image */
+
+.project-architecture{
+flex:1;
+}
+
+.architecture-image{
+width:100%;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Demo + GitHub section */
+
+.project-links{
+display:flex;
+gap:40px;
+background:#2f5d73;
+padding:40px;
+border-radius:12px;
+color:white;
+}
+
+.project-demo{
+flex:1;
+}
+
+.project-github{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.github-button{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+background:white;
+color:#2f5d73;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+}
+
+.github-button:hover{
+background:#f3f3f3;
+}
+
+.tech-stack{
+margin-top:15px;
+margin-bottom:15px;
+}
+
+.tech-badge{
+display:inline-block;
+background:white;
+color:#2f5d73;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+margin-right:8px;
+margin-bottom:6px;
+font-weight:500;
+}

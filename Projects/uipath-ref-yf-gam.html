@@ -1,20 +1,123 @@
-<h1>Yahoo REF Automation</h1>
+<!DOCTYPE html>
+<html>
 
-<h2>Overview</h2>
-<p>
-Automation built using UiPath REF framework to process Yahoo data ingestion workflows.
-</p>
+<head>
 
-<h2>Technologies</h2>
-<ul>
-<li>UiPath</li>
-<li>Queue Based Architecture</li>
-<li>Email Automation</li>
-</ul>
+    <title>UiPath REFramework – Yahoo Finance Metrics</title>
+    <link rel="stylesheet" href="../style.css">
 
-<h2>Business Impact</h2>
-<p>
-Reduced manual processing time by 80%.
-</p>
+</head>
 
-<a href="../projects.html">← Back to Projects</a>
+<body>
+
+    <div id="header"></div>
+
+    <main class="project-page">
+
+        <a href="../projects.html" class="back-link">
+        ← Back to Projects
+        </a>
+
+        <h1 class="project-page-title">
+        UiPath REFramework – Yahoo Finance Annual Metrics
+        </h1>
+
+        <div class="project-overview">
+
+            <div class="project-description">
+
+            <h2>Project Description</h2>
+
+            <p>
+            This automation solution uses the UiPath Robotic Enterprise Framework
+            to extract stock data from Yahoo Finance and calculate annual
+            financial metrics for NASDAQ listed companies.
+            </p>
+
+            <p>
+            The solution demonstrates a scalable enterprise automation
+            architecture capable of processing large financial datasets
+            with robust error handling and retry mechanisms.
+            </p>
+
+            <h3>High-level process steps</h3>
+
+            <ol>
+
+            <li>Retrieve NASDAQ stock tickers</li>
+
+            <li>Extract yearly financial data from Yahoo Finance</li>
+
+            <li>Calculate performance metrics and indicators</li>
+
+            <li>Store results in structured data format</li>
+
+            </ol>
+
+            </div>
+
+
+            <div class="project-architecture">
+            <img src="../Images/uipath-ref-yf-gam-sd.png" class="architecture-image">
+            </div>
+
+        </div>
+
+
+        <div class="project-links">
+
+            <div class="project-demo">
+
+                <h3>Solution Demo</h3>
+
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/1G-3-tjI-60?si=Oxfjph5Rr61owKN9" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+                </iframe>
+
+            </div>
+
+
+            <div class="project-github">
+
+                <h3>GitHub Repository</h3>
+
+                <p>
+                Source code and implementation details available on GitHub.
+                </p>
+
+                <div class="tech-stack">
+                <span class="tech-badge">UiPath</span>
+                <span class="tech-badge">REFramework</span>
+                <span class="tech-badge">Yahoo Finance accessed via Chrome Browser</span>
+                <span class="tech-badge">Data Processing</span>
+                <span class="tech-badge">Excel</span>
+
+                </div>
+
+                <a
+                href="https://github.com/arkapravabasak/REF_YahooFinance_GetAnnualMetrics"
+                class="github-button"
+                target="_blank">
+                View Repository
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
