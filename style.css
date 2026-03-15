@@ -525,3 +525,18 @@ margin-right:8px;
 margin-bottom:6px;
 font-weight:500;
 }
+
+.process-steps{
+margin-top:15px;
+padding-left:20px;
+}
+
+.process-steps ol{
+display:block;
+}
+
+.process-steps li{
+display:list-item;
+margin-bottom:10px;
+line-height:1.6;
+}
