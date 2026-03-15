@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-let pathPrefix = "";
+let basePath = "";
 
-/* detect if page is inside projects folder */
+/* detect if we are inside projects folder */
 
 if (window.location.pathname.includes("/projects/")) {
-    pathPrefix = "../";
+    basePath = "../";
 }
 
-fetch(pathPrefix + "header.html")
-.then(response => response.text())
+fetch(basePath + "header.html")
+.then(res => res.text())
 .then(data => {
     document.getElementById("header").innerHTML = data;
 });
 
-fetch(pathPrefix + "footer.html")
-.then(response => response.text())
+fetch(basePath + "footer.html")
+.then(res => res.text())
 .then(data => {
     document.getElementById("footer").innerHTML = data;
 });

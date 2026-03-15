@@ -527,16 +527,16 @@ font-weight:500;
 }
 
 .process-steps{
-margin-top:15px;
-padding-left:20px;
+max-width:700px;
+margin-top:20px;
 }
 
 .process-steps ol{
-display:block;
+padding-left:20px;
 }
 
 .process-steps li{
-display:list-item;
-margin-bottom:10px;
+margin-bottom:12px;
 line-height:1.6;
+max-width:650px;
 }
