@@ -47,3 +47,12 @@ modal.style.display="none";
 });
 
 };
+
+function openImageModal(src){
+document.getElementById("imageModal").style.display="flex";
+document.getElementById("modalImage").src = src;
+}
+
+function closeImageModal(){
+document.getElementById("imageModal").style.display="none";
+}
