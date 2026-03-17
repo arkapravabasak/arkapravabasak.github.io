@@ -486,9 +486,9 @@ vertical-align: middle;
 
 .architecture-image{
 width:100%;
-max-width:750px;
+/*max-width:750px;
 border-radius:10px;
-margin-top:10px;
+margin-top:10px;*/
 }
 
 /* Demo + GitHub section */
