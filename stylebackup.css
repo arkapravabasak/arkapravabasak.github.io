@@ -1,33 +1,20 @@
 
-:root {
-    --primary: #00d2ff; /* Tech Cyan */
-    --accent: #3a7bd5;  /* Deep Blue */
-    --bg-dark: #0f172a; /* Slate 900 */
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --text-main: #f1f5f9;
-    --text-dim: #94a3b8;
+body{
+margin:0;
+font-family:Segoe UI, sans-serif;
+
+background:
+radial-gradient(circle at 20% 20%, #e7eef3 0%, transparent 40%),
+radial-gradient(circle at 80% 10%, #e9f1f6 0%, transparent 40%),
+linear-gradient(#f4f7f9,#eef2f6);
+
+color:#222;
 }
-
-body {
-    background: #0f172a; /* Solid dark background for a tech feel */
-    background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 210, 255, 0.05) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(58, 123, 213, 0.05) 0px, transparent 50%);
-    color: var(--text-main);
-    line-height: 1.6;
-}
-
-
 
 /* HEADER */
 
-.site-header {
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.site-header{
+padding:25px 0 10px 0;
 }
 
 .header-container{
@@ -62,13 +49,10 @@ color:#000;
 text-decoration:underline;
 }
 
-.header-divider {
-    display: none; /* Removed the thick bar for a cleaner look */
-}
-
-.logo strong {
-    color: var(--primary);
-    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+.header-divider{
+height:6px;
+background:#2f5d73;
+margin-top:15px;
 }
 
 /* MAIN */
