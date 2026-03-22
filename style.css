@@ -167,13 +167,13 @@ margin-bottom:35px;
 font-size:28px;
 }
 
-.expertise-grid{
+/*.expertise-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 max-width:1000px;
 margin:auto;
-}
+}*/
 
 .expertise-card{
 background:white;
@@ -360,4 +360,46 @@ flex-direction:column;
 flex-direction:column;
 }
 
+}
+
+/* ===== MODAL BACKGROUND ===== */
+
+.modal{
+display: none;                 /* hidden by default */
+position: fixed;               /* takes it out of layout */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+background: rgba(0,0,0,0.5);  /* dark overlay */
+
+justify-content: center;
+align-items: center;
+
+z-index: 9999;                /* ensures it's above everything */
+}
+
+/* ===== MODAL CONTENT ===== */
+
+.modal-content{
+background: white;
+padding: 30px;
+border-radius: 12px;
+width: 90%;
+max-width: 500px;
+text-align: center;
+
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+position: relative;
+}
+
+/* CLOSE BUTTON */
+
+.close-button{
+position: absolute;
+top: 10px;
+right: 15px;
+font-size: 22px;
+cursor: pointer;
 }
