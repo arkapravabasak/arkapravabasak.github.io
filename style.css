@@ -362,44 +362,51 @@ flex-direction:column;
 
 }
 
-/* ===== MODAL BACKGROUND ===== */
-
 .modal{
-display: none;                 /* hidden by default */
-position: fixed;               /* takes it out of layout */
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-
-background: rgba(0,0,0,0.5);  /* dark overlay */
-
-justify-content: center;
-align-items: center;
-
-z-index: 9999;                /* ensures it's above everything */
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+justify-content:center;
+align-items:center;
 }
-
-/* ===== MODAL CONTENT ===== */
 
 .modal-content{
-background: white;
-padding: 30px;
-border-radius: 12px;
-width: 90%;
-max-width: 500px;
-text-align: center;
-
-box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-position: relative;
+background:white;
+padding:40px;
+border-radius:14px;
+max-width:500px;
+width:90%;
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
+text-align:left;
+position:relative;
+animation:modalFade 0.3s ease;
 }
 
-/* CLOSE BUTTON */
-
 .close-button{
-position: absolute;
-top: 10px;
-right: 15px;
-font-size: 22px;
-cursor: pointer;
+position:absolute;
+top:15px;
+right:20px;
+font-size:26px;
+cursor:pointer;
+color:#555;
+}
+
+.close-button:hover{
+color:black;
+}
+
+@keyframes modalFade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
