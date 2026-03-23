@@ -50,14 +50,19 @@ z-index:1;
 }
 
 .logo{
-font-size:26px;
+font-size:30px;          /* increased from ~26 */
 font-weight:700;
-letter-spacing:1px;
-color:#1f2d3a;
+letter-spacing:1.2px;
+color:#2f5d73;
+}
+
+.logo:hover{
+opacity:0.85;
+cursor:pointer;
 }
 
 .title{
-font-size:16px;
+font-size:18px;          /* increased from ~16 */
 color:#555;
 }
 
