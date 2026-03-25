@@ -538,6 +538,12 @@ left:50%;
 transform:translateX(-50%);
 z-index:2;
 }
+.timeline-item.left::before{ 
+    right:-7px; 
+} 
+.timeline-item.right::before{ 
+    left:-7px; 
+} 
 
 /*.timeline-item.right::before{
 left: -7px;
