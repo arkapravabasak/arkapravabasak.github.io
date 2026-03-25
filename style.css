@@ -479,6 +479,7 @@ background:#1e293b;
 padding:25px;
 border-radius:12px;
 box-shadow:0 10px 30px rgba(0,0,0,0.4);
+position: relative;
 }
 
 .timeline-content h2{
@@ -502,6 +503,26 @@ padding-left:18px;
 
 .timeline-content li{
 margin-bottom:8px;
+}
+
+.timeline-item.left .timeline-content::after{
+content:"";
+position:absolute;
+right:-10px;
+top:30px;
+width:10px;
+height:2px;
+background:#334155;
+}
+
+.timeline-item.right .timeline-content::after{
+content:"";
+position:absolute;
+left:-10px;
+top:30px;
+width:10px;
+height:2px;
+background:#334155;
 }
 
 /* ===== TIMELINE DOT ===== */
