@@ -609,3 +609,41 @@ left:15px;
 }*/
 
 }
+
+.repo-section{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* BUTTON */
+
+.repo-button{
+display:inline-block;
+background:#2f5d73;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+width:fit-content;
+}
+
+.repo-button:hover{
+background:#3b82f6;
+}
+
+/* TECH STACK */
+
+.tech-stack{
+margin-top:10px;
+}
+
+.tech-stack h4{
+margin-bottom:8px;
+color:#cbd5f5;
+}
+
+.tech-stack p{
+margin:4px 0;
+color:#94a3b8;
+}
